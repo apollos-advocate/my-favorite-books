@@ -11,6 +11,13 @@
     <h1>Solane’s Favorite Books 📚</h1>
     <p>because I have very important opinions</p>
   </header>
+<script>
+  document.querySelectorAll('.spoiler').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('revealed');
+    });
+  });
+</script>
 
   <main class="book-container">
     <div class="book-card">
@@ -39,6 +46,8 @@
       </p>
     </div>
   </main>
+ 
+
 
   <footer>
     <p>Built with ❤️ by Apollo. Dedicated to the people who kept me here.</p>
