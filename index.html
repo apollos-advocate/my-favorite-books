@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solane's Favorite Books</title>
+  <title>Solane’s Favorite Books 📚</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,40 +14,34 @@
 
   <main class="book-container">
     <div class="book-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Illuminae_amie_kaufman_jay_kristoff_book_cover.jpg" alt="Illuminae Cover">
       <h2>Illuminae</h2>
       <p class="desc">A sci-fi story told through hacked documents, chats, and schematics.</p>
-      <button>Solane's important opinions (spoilers!)</button>
-      <p class="spoiler">I LOVE the way it mixes narrative formats. Normal books are boring asf now...</p>
+      <button class="spoiler-btn">Show Solane’s Opinions</button>
+      <p class="spoiler">I LOVE the way it mixes narrative formats. Normal books are boring now. But <em>Illuminae</em> and the other two books mix notes, emails, and security footage. Only three books have ever made me cry—this is one of them.</p>
     </div>
 
     <div class="book-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Gemina_cover.jpg" alt="Gemina Cover">
       <h2>Gemina</h2>
       <p class="desc">Another mind-bending chapter in the Illuminae Files with new protagonists.</p>
-      <button>Solane's important opinions (spoilers!)</button>
-      <p class="spoiler">The pacing is insane. I picked it up and literally couldn't put it down...</p>
+      <button class="spoiler-btn">Show Solane’s Opinions</button>
+      <p class="spoiler">The pacing is insane. Even though I've read it like 600 times, I still bawl at Nik and Hanna’s scenes every single time.</p>
     </div>
 
     <div class="book-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Obsidio_cover.jpg" alt="Obsidio Cover">
       <h2>Obsidio</h2>
       <p class="desc">The finale that ties everything together in an epic showdown.</p>
-      <button>Solane's important opinions (spoilers!)</button>
-      <p class="spoiler">High stakes, emotional punches, and so satisfying to see all storylines collide...</p>
+      <button class="spoiler-btn">Show Solane’s Opinions</button>
+      <p class="spoiler">High stakes, emotional punches, and so satisfying to see all storylines collide. The ending made me feel like I earned it.</p>
     </div>
   </main>
 
   <footer>
-    <p>Built with ❤️ by Apollo. Dedicated to the people who helped get me to where I am.</p>
+    <p>Built with ❤️ by Solane. Dedicated to the people who helped get me here.</p>
   </footer>
 
-  <!-- Moved JS to the bottom -->
-  <script>
-    document.querySelectorAll('.book-card button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const spoiler = btn.nextElementSibling;
-        spoiler.classList.toggle('revealed');
-        btn.style.display = 'none';
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
