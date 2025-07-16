@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solane's favorite books</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solane's favorite Books</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1 class="glitch" data-text="Solane's favorite books">Solane's favorite books</h1>
-        <p class="subtitle">Aspiring Neurosurgeon • CS Learner • Dedicated Bookworm</p>
-        <h2 class="section-title">Favorite Books: The Illuminae Files</h2>
-        <div class="books">
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/91VjvBKUHJL._SL1500_.jpg" alt="Illuminae" />
-                <p>Illuminae</p>
-            </div>
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/81FGpQHITbL._SL1500_.jpg" alt="Gemina" />
-                <p>Gemina</p>
-            </div>
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/91ZJkUqrnQL._SL1500_.jpg" alt="Obsidio" />
-                <p>Obsidio</p>
-            </div>
-        </div>
+  <header>
+    <h1>Solane’s Favorite Books 📚</h1>
+    <p>because I have very important opinions</p>
+  </header>
+
+  <main class="book-container">
+    <div class="book-card">
+      <img src="illuminae.jpg" alt="Illuminae Cover" />
+      <h2>Illuminae</h2>
+      <p class="desc">A sci-fi story told through hacked documents, chats, and schematics.</p>
+      <button onclick="this.nextElementSibling.style.display='block'; this.style.display='none';">Show Why I Love It</button>
+      <p class="spoiler">I LOVE the way it mixes narrative formats. Normal books are boring asf now. But <em>Illuminae</em>, and the other two books in the series, mixes notes, emails, and security footage. It just makes for such an interesting story. Only three books I've ever cried about</p>
     </div>
+
+    <div class="book-card">
+      <img src="gemina.jpg" alt="Gemina Cover" />
+      <h2>Gemina</h2>
+      <p class="desc">Another mind-bending chapter in the Illuminae Files with new protagonists.</p>
+      <button onclick="this.nextElementSibling.style.display='block'; this.style.display='none';">Show Why I Love It</button>
+      <p class="spoiler">The pacing is insane. I picked it up and literally couldn't put it down. I could've sworn the book was glued to my fingertips. Even though I've read it like 600 times, I always forget about Nik and Hanna dying with each other in their alternate universes and start bawling. Even if I remembered I would still be bawling lmao.</p>
+    </div>
+
+    <div class="book-card">
+      <img src="obsidio.jpg" alt="Obsidio Cover" />
+      <h2>Obsidio</h2>
+      <p class="desc">The finale that ties everything together in an epic showdown.</p>
+      <button onclick="this.nextElementSibling.style.display='block'; this.style.display='none';">Show Why I Love It</button>
+      <p class="spoiler">High stakes, emotional punches, and so satisfying to see all storylines collide. Also Katya is so cute and I forgot she doesn't die, so I flipped ahead (do y'all ever do that? just flip ahead to see what happens?) and she doesn't die and then I realized I was holding my breath the entire time. Asha and Kady have the best dynamic, and I'm so happy that Kaufman and Kristoff (literal LITERARY GENIUSES HOLY CRAP) didn't kill off anyone they weren
+        upposed to. I was so stressed reading this book, but it was worth every second. The ending is perfect (them meeting up in the restaurant and Nik bumming off of Hanna? Classic) and wraps up the trilogy in a way that feels earned. I mean, when people see how big these books are, and still choose to read them, they definitely earned it.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ by Apollo. Dedicated to the people who kept me here.</p>
+  </footer>
 </body>
 </html>
+
 
